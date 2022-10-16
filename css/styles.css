@@ -1,0 +1,72 @@
+/* колір основного тексту #757575 */
+/* колір вторинного тексту #212121 */
+/* колір акценту #2196F3 */
+/* колір білий #FFFFFF */
+/* колір фону темний #2F303A */
+/* колір сірого фону #F5F4FA */
+/* колір білий прозорий rgba(255, 255, 255, 0.6) */
+
+.root {
+	--primary-text-color: #757575;
+	--title-text-color: #212121;
+	--accent-color: #2196F3;
+	--primary-white-color: #FFFFFF;
+	--white-color-transparent: rgba(255, 255, 255, 0.6);
+	--background-coor-dark:#2F303A;
+	--background-coor-gray: #F5F4FA;
+}
+body {
+	font-family: Roboto, sans-serif;
+	background-color: var(--primary-white-color);
+	color: var(--primary-text-color);
+}
+.logo {
+color: var(--title-text-color);
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+text-decoration: none;
+/* identical to box height */
+letter-spacing: 0.03em;
+}
+.logo-web {
+	color: #2196F3;
+}
+.list {
+	list-style: none;
+}
+.nav-links .link {
+color: var(--title-text-color);
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+text-decoration: none;
+}
+.nav-links .accent {
+color: #2196F3;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+text-decoration: none;
+}
+.list .contact {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	color: #757575;
+}
+.list .contact:hover {
+	color: #2196F3;
+}
