@@ -24,6 +24,9 @@ body {
 .list {
 	list-style: none;
 }
+.buttons {
+	list-style: none;
+}
 
 /* стилі логотипу */
 .logo {
@@ -43,7 +46,20 @@ letter-spacing: 0.03em;
 .logo-studio {
 	color: #FFFFFF;
 }
-
+/* стилі контактів шапки */
+.header-contact {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	color: #757575;
+}
+.header-contact:hover, .header-contact:focus {
+	color: #2196F3;
+}
 /* стилі навігатора */
 .nav-links .link {
 color: var(--title-text-color);
@@ -173,21 +189,51 @@ color: #212121;
 }
 /* стилі main сторінки Porfolio */
 
-/* стилі контактів */
-.list .contact {
+/* стиль кнопки */
+.button-filter {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 500;
-	font-size: 14px;
-	line-height: 16px;
-	letter-spacing: 0.02em;
-	text-decoration: none;
-	color: #757575;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	letter-spacing: 0.03em;
+		color: #212121;
+		background-color: #F5F4FA;
+		border-radius: 4px;
+		border: 0;
+		}
+	.button-filter:hover, .buttons .button-filter:focus {
+		color: #FFFFFF;
+		background-color: #2196F3;
+	}
+	/* стиль фото-галереї */
+.gallary-title {
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 36px;
+/* identical to box height, or 200% */
+letter-spacing: 0.06em;
+color: #212121;
 }
-.list .contact:hover, .list .contact:focus {
-	color: #2196F3;
+.gallary-text {
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+/* identical to box height, or 188% */
+letter-spacing: 0.03em;
+color: #757575;
 }
-.list .contacts {
+/* стилі футера */
+.footer {
+	background: #2F303A
+	}
+
+.footer-contact {
 	font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -198,7 +244,7 @@ text-decoration: none;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
-.list .contacts:hover, .list .contacts:focus {
+.footer-contact:hover, .footer-contact:focus {
 	color: #2196F3;
 }
 /* стиль адреси */
@@ -215,29 +261,4 @@ letter-spacing: 0.03em
 }
 .address:hover, .address:focus {
 	color: #2196F3;
-}
-/* стиль кнопки */
-.buttons {
-	list-style: none;
-}
-.button-filter {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 26px;
-text-align: center;
-letter-spacing: 0.03em;
-	color: #212121;
-	background-color: #F5F4FA;
-	border-radius: 4px;
-	border: 0;
-	}
-.button-filter:hover, .buttons .button-filter:focus {
-	color: #FFFFFF;
-	background-color: #2196F3;
-}
-	/* стилі футера */
-.footer {
-background: #2F303A
 }
