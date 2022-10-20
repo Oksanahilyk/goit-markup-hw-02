@@ -28,6 +28,10 @@ body {
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+}
+
 /* стилі логотипу */
 .logo {
   color: var(--accent-color);
@@ -35,9 +39,8 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: calc(31 / 26);
   text-decoration: none;
-  /* identical to box height */
   letter-spacing: 0.03em;
 }
 .logo-web {
@@ -52,7 +55,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primary-text-color);
@@ -62,26 +65,26 @@ body {
   color: var(--accent-color);
 }
 /* стилі навігатора */
-.nav-links .link {
+
+.link-current .link-secondary {
   color: var(--title-text-color);
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
-.nav-links .accent {
+
+.link-secondary:hover,
+.link-secondary:focus {
   color: var(--accent-color);
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  text-decoration: none;
 }
+
+.link-current {
+  color: var(--accent-color);
+}
+
 /* стилі main WebStudio */
 .hero {
   background: var(--background-color-dark);
@@ -100,8 +103,7 @@ body {
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
-  /* or 136% */
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -112,7 +114,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: calc(26 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -136,7 +138,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
@@ -146,8 +148,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -156,18 +157,19 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
-  text-align: center;
+  line-height: calc(42 / 36);
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+.team {
+  background-color: var(--background-color-gray);
 }
 .team-title {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
-  text-align: center;
+  line-height: calc(42 / 36);
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
@@ -177,8 +179,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  /* identical to box height */
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
@@ -187,9 +187,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
-  /* identical to box height */
-  text-align: center;
+  line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -201,7 +199,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: calc(26 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -220,18 +218,20 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
-  /* identical to box height, or 200% */
+  line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  text-decoration: none;
+}
+.gallary-title:hover, .gallary-title:focus {
+  color: var(--accent-color);
 }
 .gallary-text {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 188% */
+  line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -245,9 +245,8 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: calc(24 / 14);
   text-decoration: none;
-  /* or 171% */
   letter-spacing: 0.03em;
   color: var(--color-transparent);
 }
@@ -262,9 +261,8 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: calc(24 / 14);
   text-decoration: none;
-  /* or 171% */
   letter-spacing: 0.03em;
 }
 .address:hover,
